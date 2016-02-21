@@ -1,3 +1,10 @@
+@font-face {
+  font-family: kalinga;
+  src: url(assets/kalinga.ttf); }
+@font-face {
+  font-family: kalinga;
+  src: url(assets/kalingab.ttf);
+  font-weight: bold; }
 body {
   margin: 0 !important;
   padding: 0 !important; }
@@ -32,7 +39,11 @@ header {
     position: relative;
     float: left;
     width: 50%;
-    background-color: white; }
+    text-align: center;
+    background-color: white;
+    font-family: kalinga;
+    font-weight: bold;
+    font-size: 20pt; }
   header span {
     position: absolute;
     top: 75%;
