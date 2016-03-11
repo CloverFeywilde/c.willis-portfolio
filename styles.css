@@ -1,13 +1,25 @@
-@font-face {
-  font-family: kalinga;
-  src: url(assets/kalinga.ttf); }
-@font-face {
-  font-family: kalinga;
-  src: url(assets/kalingab.ttf);
-  font-weight: bold; }
 body {
   margin: 0 !important;
-  padding: 0 !important; }
+  padding: 0 !important;
+  font-family: Arial, sans-serif; }
+
+h2 {
+  font-family: arial black;
+  font-size: 40pt; }
+
+h1 {
+  font-family: arial black;
+  font-size: 40pt; }
+
+.dropcap {
+  float: left;
+  width: 0.8em;
+  font-size: 400%;
+  font-family: arial black;
+  line-height: 70%;
+  position: inherit;
+  opacity: 1 !important;
+  color: black; }
 
 wrapper {
   width: 100%; }
@@ -40,7 +52,7 @@ header {
     width: 50%;
     text-align: center;
     background-color: white;
-    font-family: kalinga;
+    font-family: Arial;
     font-weight: bold;
     font-size: 20pt; }
   header .ctext {
@@ -49,7 +61,7 @@ header {
     width: 100%;
     float: left;
     text-align: center;
-    font-family: kalinga;
+    font-family: arial;
     font-weight: normal;
     font-size: 12pt;
     margin-top: 70px;
@@ -135,7 +147,9 @@ section {
     section .contactcell h2 {
       margin-top: 50px;
       display: block;
-      margin-top: 30px; }
+      margin-top: 30px;
+      font-family: arial;
+      font-size: 2em; }
     section .contactcell img {
       max-width: 40%;
       height: auto; }
@@ -145,7 +159,7 @@ section {
     width: 100%;
     float: left;
     text-align: center;
-    font-family: kalinga;
+    font-family: arial;
     font-weight: normal;
     font-size: 12pt;
     margin-top: 70px;
@@ -175,7 +189,10 @@ section {
   section .rbox {
     position: relative;
     display: table-cell;
-    padding: 60px; }
+    padding: 60px;
+    padding-top: 0px; }
+    section .rbox .dropcap {
+      color: white; }
   section .lbox {
     position: relative;
     display: table-cell;
@@ -210,7 +227,7 @@ section {
     top: 150px;
     left: 0;
     width: 100%;
-    font-family: kalinga;
+    font-family: arial;
     font-weight: bold;
     font-size: 20px;
     color: white;
@@ -239,5 +256,47 @@ footer {
   float: left;
   background-color: white;
   text-align: center; }
+
+.artifactheader {
+  text-align: center;
+  padding-top: 40px; }
+
+.artifactsection {
+  margin-top: 100px; }
+
+.acontainer {
+  width: 90%;
+  display: table;
+  table-layout: fixed;
+  margin: 0 auto; }
+
+.artimg {
+  vertical-align: top;
+  display: table-cell;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-gap: 0px;
+  width: 65%; }
+  .artimg .gallery {
+    column-count: 3; }
+  .artimg img {
+    max-width: 100%;
+    height: auto; }
+  .artimg .item {
+    display: inline-block;
+    padding: 10px;
+    background-color: #000; }
+
+.artskill h2 {
+  font-size: 20pt; }
+
+.arttext {
+  vertical-align: top;
+  display: table-cell;
+  width: 35%;
+  padding-left: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
