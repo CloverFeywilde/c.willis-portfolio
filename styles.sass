@@ -156,7 +156,7 @@ nav
 		box-sizing: border-box
 		text-align: right
 		vertical-align: middle
-		
+		//float: right
 		
 	
 	li
@@ -166,7 +166,10 @@ nav
 		margin: 10px
 		font-size: 3em
 		margin-right: 1.5rem
-		
+	
+	.fa
+		&:hover
+			color: #9bdb5c
 
 .blackbg
 	color: white
@@ -358,7 +361,13 @@ footer
 	
 	.gallery
 		column-count: 3
-	
+	.galhov
+		&:hover
+			.item
+				background-color: #9bdb5c
+				img
+					opacity: .5
+				
 	img
 		//position: absolute
 		max-width: 100%
@@ -369,8 +378,40 @@ footer
 		padding: 10px
 		background-color: #000
 		
+		
 .artskill
-	
+	margin-top: 50px
+	ul
+		display: table
+		text-align: left
+		margin-left: 0%
+		width: 50%
+		position:relative
+		li
+			display: inline-block
+			float: left
+			width: auto
+			height: auto
+			background-color: transparent
+			margin-left: 0%
+			margin-top: 20px
+			
+	span
+		display: inline-block
+		vertical-align: middle
+		color: black
+		position: static
+		opacity: 1
+		padding-left: 20px
+		width: auto
+		
+		
+	img
+		width: 20%
+		height: auto
+		vertical-align: middle
+		
+			
 	h2
 		font-size: 20pt
 
@@ -379,3 +420,7 @@ footer
 	display: table-cell
 	width: 35%
 	padding-left: 30px
+	
+//nav edits	
+.galnav
+	float: left

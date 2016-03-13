@@ -122,6 +122,8 @@ nav {
     margin: 10px;
     font-size: 3em;
     margin-right: 1.5rem; }
+  nav .fa:hover {
+    color: #9bdb5c; }
 
 .blackbg {
   color: white;
@@ -282,6 +284,10 @@ footer {
   width: 65%; }
   .artimg .gallery {
     column-count: 3; }
+  .artimg .galhov:hover .item {
+    background-color: #9bdb5c; }
+    .artimg .galhov:hover .item img {
+      opacity: 0.5; }
   .artimg img {
     max-width: 100%;
     height: auto; }
@@ -290,13 +296,43 @@ footer {
     padding: 10px;
     background-color: #000; }
 
-.artskill h2 {
-  font-size: 20pt; }
+.artskill {
+  margin-top: 50px; }
+  .artskill ul {
+    display: table;
+    text-align: left;
+    margin-left: 0%;
+    width: 50%; }
+    .artskill ul li {
+      display: inline-block;
+      float: left;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      margin-left: 0%;
+      margin-top: 20px; }
+  .artskill span {
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    position: static;
+    opacity: 1;
+    padding-left: 20px;
+    width: auto; }
+  .artskill img {
+    width: 20%;
+    height: auto;
+    vertical-align: middle; }
+  .artskill h2 {
+    font-size: 20pt; }
 
 .arttext {
   vertical-align: top;
   display: table-cell;
   width: 35%;
   padding-left: 30px; }
+
+.galnav {
+  float: left; }
 
 /*# sourceMappingURL=styles.css.map */
