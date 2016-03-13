@@ -180,8 +180,50 @@ section {
     width: 100%;
     text-align: center;
     height: 250px;
-    background-color: grey;
     line-height: normal; }
+    section .vdheader:before {
+      content: "";
+      position: absolute;
+      display: table;
+      background-image: url(assets/VDbg_1.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      width: 100%;
+      text-align: center;
+      height: 250px;
+      line-height: normal;
+      overflow: hidden;
+      opacity: 0.8; }
+  section .blackshadow {
+    color: black;
+    -webkit-filter: drop-shadow(0px 3px 4px rgba(255, 255, 255, 0.7)); }
+  section .ilheader {
+    position: relative;
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 250px;
+    line-height: normal; }
+    section .ilheader:before {
+      content: "";
+      position: absolute;
+      display: table;
+      background-image: url(assets/FIbg_2.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      width: 100%;
+      text-align: center;
+      height: 250px;
+      line-height: normal;
+      overflow: hidden;
+      opacity: 0.8; }
+  section .whiteglow {
+    color: white;
+    -webkit-filter: drop-shadow(5px 6px 7px rgba(0, 0, 0, 0.7)); }
   section .contain {
     position: relative;
     display: table;
