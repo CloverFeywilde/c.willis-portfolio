@@ -10,8 +10,9 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
-  <!-- <script src="https://use.typekit.net/bzm2ipj.js"></script> 
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script language="JavaScript">var element_to_scroll_to = document.querySelectorAll('.vdfix')[0];</script>
+   <script src="https://use.typekit.net/bzm2ipj.js"></script> 
   <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
   
   <!--[if lt IE 9]>
@@ -27,8 +28,8 @@
 	<nav>
 		<ul>
 			<li><a class="fa fa-home" href="http://www.bwillis.info/" target="_blank"></a></li>
-			<li><a class="fa fa-user" href="http://www.bwillis.info/" target="_blank"></a></li>
-			<li><a class="fa fa-envelope" href="http://www.bwillis.info/" target="_blank"></a></li>
+			<li><a class="fa fa-user" href="#about"></a></li>
+			<li><a class="fa fa-envelope" href="#contact"></a></li>
 		
 		</ul>
 	</nav>
@@ -38,8 +39,10 @@
 			<li class="visualdesign">
 				<div class="whitefix">
 				</div>
+				<a href="#vdgallery">
 				<img src="assets/VDicon.png" onmouseover="this.src='assets/VDicon_litglow.png'" onmouseout="this.src='assets/VDicon.png'">
 				</img>
+				</a>
 				<!--<h2>
 					<span>Visual Designer UI/UX/Web</span>
 				</h2>-->
@@ -48,22 +51,28 @@
 			<li class="freelanceillustration">
 				<div class="whitefix">
 				</div>
+				<a href="#figallery">
 				<img src="assets/FIicon.png" onmouseover="this.src='assets/FIicon_litglow.png'" onmouseout="this.src='assets/FIicon.png'"/>
 				</img>
+				</a>
 				<!--<h2>
 					<span>Freelance Illustrator</span>
 				</h2>-->
 			</li>
 		</ul>
 		<div class="htext">
+			<a href="#vdgallery">
 			<h2>
 				VISUAL DESIGNER
 			</h2>
+			</a>
 		</div>
 		<div class="htext">
+			<a href="#figallery">
 			<h2>
 				FREELANCE ILLUSTRATOR
 			</h2>
+			</a>
 		</div>
 		<div class="ctext">
 			<h3>
@@ -73,11 +82,13 @@
 	</header>
 	
 	<section class="blackbg">
+		<a name="about">
 		<div class="aboutheader">
 		<h2>
 			Meet Bryan Willis.
 		</h2>
 		</div>
+		</a>
 		<div class="contain">
 		<div class="lbox">
 		</div>
@@ -98,65 +109,76 @@ Dolor donec pharetra rhoncus, praesent imperdiet, non enim adipiscing nunc et, a
 	</section>
 	
 	<section class="vdfix">
+		<a name="vdgallery">
+		<script language="JavaScript">element_to_scroll_to.scrollIntoView();</script>
 		<div class="vdheader">
 			<h2 class="blackshadow">Visual Designer</h2>
 		</div>
+		</a>
 			<ul class="galleryimg">
 				<li>
-				<a class="aimg1" href="artifact/featuresite.html">
-				<img class="img1" src="assets/circle1.png" />
-				<span>Image 1</span>
+				<a class="aimg1" href="artifact/gameconcept.html">
+				<img class="img1" src="assets/gameconcept_circle.png" />
+				<span>Interactive<br/>Design Document</span>
 				</a>
 				</li>
 				
 				<li>
-				<a class="aimg2">
-				<img class="img2" src="assets/circle1.png" />
-				<span>Image 2</span>
+				<a class="aimg2" href="artifact/featuresite.html">
+				<img class="img2" src="assets/featuresite_circle.png" />
+				<span>Feature Website<br/>Nude Models</span>
 				</a>
 				</li>
 				
 				<li>
 				<a class="aimg3">
-				<img class="img3" src="assets/circle1.png" />
-				<span>Image 3</span>
+				<img class="img3" src="assets/visualidentity_circle.png" />
+				<span>My<br/>Visual Identity</span>
 				</a>
 				</li>
 				
 				<li>
 				<a class="aimg4">
-				<img class="img4" src="assets/circle1.png" />
-				<span>Image 4</span>
+				<img class="img4" src="assets/2pagespread_circle.png" />
+				<span>Print Magazine<br/>2-Page Spread</span>
 				</a>
 				</li>
+				
 				
 				<!--Second Row -->
 				
 				<li>
 				<a class="aimg1">
-				<img class="img1" src="assets/circle1.png" />
-				<span>Image 1</span>
+				<img class="img1" src="assets/cardredesign_circle.png" />
+				<span>Specialty Foods<br/>Business Card</span>
 				</a>
 				</li>
 				
 				<li>
 				<a class="aimg2">
-				<img class="img2" src="assets/circle1.png" />
-				<span>Image 2</span>
+				<img class="img2" src="assets/designproposal_circle.png" />
+				<span>Post Office<br/>Print Proposal</span>
 				</a>
 				</li>
 				
 				<li>
 				<a class="aimg3">
-				<img class="img3" src="assets/circle1.png" />
-				<span>Image 3</span>
+				<img class="img3" src="assets/advertisementphoto_circle.png" />
+				<span>Photo Sale<br/>Advertisement</span>
 				</a>
 				</li>
 				
 				<li>
 				<a class="aimg4">
-				<img class="img4" src="assets/circle1.png" />
-				<span>Image 4</span>
+				<img class="img4" src="assets/postcarddesign_circle.png" />
+				<span>Open House<br/>Post Card</span>
+				</a>
+				</li>
+				
+				<li>
+				<a class="aimg4">
+				<img class="img4" src="assets/1pagecreative_circle.png" />
+				<span>Print Document<br/>Sensuality</span>
 				</a>
 				</li>
 
@@ -164,9 +186,11 @@ Dolor donec pharetra rhoncus, praesent imperdiet, non enim adipiscing nunc et, a
 	</section>
 	
 	<section>
+		<a name="figallery">
 		<div class="ilheader">
 			<h2 class="blackshadow">Freelance Illustrator</h2>
 		</div>
+		</a>
 			<ul class="galleryimg">
 				<li>
 				<a class="aimg1">
@@ -230,12 +254,13 @@ Dolor donec pharetra rhoncus, praesent imperdiet, non enim adipiscing nunc et, a
 	</section>
 	
 	<section class="blackbg">
+		<a name="contact">
 		<div class="aboutheader">
 			<h2>
 				Need my skills?
 			</h2>
 		</div>
-		
+		</a>
 		<div class="contain">
 			<div class="contactcell">
 				<img src="assets/emailbubble.png"/>
