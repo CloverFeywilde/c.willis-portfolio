@@ -150,14 +150,15 @@ section {
   section .contactcell {
     display: table-cell;
     position: relative;
-    width: 33.3%;
+    width: 20%;
     text-align: center; }
     section .contactcell h2 {
       margin-top: 50px;
       display: block;
       margin-top: 30px;
       font-family: arial;
-      font-size: 2em; }
+      font-size: 16pt;
+      font-weight: normal; }
     section .contactcell img {
       max-width: 40%;
       height: auto; }
@@ -235,7 +236,8 @@ section {
     display: table;
     float: left;
     width: 80%;
-    margin-left: 10%; }
+    margin-left: 10%;
+    table-layout: fixed; }
   section .rbox {
     position: relative;
     display: table-cell;
