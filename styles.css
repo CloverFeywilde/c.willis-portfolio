@@ -152,13 +152,22 @@ section {
     position: relative;
     width: 20%;
     text-align: center; }
+    section .contactcell a {
+      outline: none;
+      text-decoration: none;
+      color: black;
+      color: #9bdb5c; }
     section .contactcell h2 {
       margin-top: 50px;
       display: block;
       margin-top: 30px;
       font-family: arial;
       font-size: 16pt;
-      font-weight: normal; }
+      font-weight: normal;
+      outline: none;
+      text-decoration: none; }
+      section .contactcell h2:hover {
+        color: #9bdb5c; }
     section .contactcell img {
       max-width: 40%;
       height: auto; }
@@ -320,6 +329,48 @@ footer {
   display: table;
   table-layout: fixed;
   margin: 0 auto; }
+
+.ilimg {
+  vertical-align: top;
+  display: table-cell;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-gap: 0px;
+  max-width: 80%;
+  float: left; }
+  .ilimg .gallery {
+    column-count: 3; }
+  .ilimg .galhov:hover .item {
+    background-color: #9bdb5c; }
+    .ilimg .galhov:hover .item img {
+      opacity: 0.5; }
+  .ilimg img {
+    max-width: 100%;
+    height: auto; }
+  .ilimg .item {
+    display: inline-block;
+    padding: 10px;
+    background-color: #000; }
+
+.artimgsingle {
+  vertical-align: top;
+  display: tablecell;
+  width: 65%;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  float: left; }
+  .artimgsingle .galhov:hover .item {
+    background-color: #9bdb5c; }
+    .artimgsingle .galhov:hover .item img {
+      opacity: 0.5; }
+  .artimgsingle .item {
+    display: inline-block;
+    padding: 10px;
+    background-color: #000; }
 
 .artimg {
   vertical-align: top;
