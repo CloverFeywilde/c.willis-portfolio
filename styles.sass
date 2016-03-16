@@ -5,35 +5,68 @@
 	-webkit-box-shadow: 0px 3px 25px 0px #666
 	box-shadow: 0px 3px 25px 0px #666  
 
-//@font-face
-	font-family: arial
-	src: url(assets/arial.ttf)
+@font-face
+	font-family: Helvetica
+	src: url(assets/typefaces/Helvetica.otf)
 
-//@font-face
-	font-family: arial
-	src: url(assets/arialb.ttf)
+@font-face
+	font-family: Helvetica Black
+	src: url(assets/typefaces/Helvetica-Black.ttf)
+	//font-weight: normal
+	
+@font-face
+	font-family: Helvetica Black moz
+	src: url(assets/typefaces/Helvetica-Black.woff)
+	//font-weight: normal
+	
+@font-face
+	font-family: Helvetica
+	src: url(assets/typefaces/Helvetica-Bold.ttf)
 	font-weight: bold
+	
+@font-face
+	font-family: Helvetica Bold 
+	src: url(assets/typefaces/Helvetica-BoldOblique.ttf)
+	font-style: oblique
+	
+@font-face
+	font-family: Helvetica Light
+	src: url(assets/typefaces/Helvetica-Light.ttf)
+	//font-weight: lighter
+	
+@font-face
+	font-family: Helvetica Light
+	src: url(assets/typefaces/Helvetica-LightOblique.ttf)
+	font-style: oblique
+	
+@font-face
+	font-family: Helvetica Oblique
+	src: url(assets/typefaces/Helvetica-Oblique.ttf)
+	//font-style: oblique
 
 
 //Body Area
 body
 	margin: 0 !important
 	padding: 0 !important
-	font-family: Arial, sans-serif
+	font-family: Helvetica, sans-serif
 	
 h2
-	font-family: arial black
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
 	font-size: 40pt
 	
 h1
-	font-family: arial black
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
 	font-size: 40pt
 	
 .dropcap
 	float: left
 	width: 0.8em
 	font-size: 400%
-	font-family: arial black
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
 	line-height: 70%
 	position: inherit
 	opacity: 1 !important
@@ -85,7 +118,7 @@ header
 		width: 50%
 		text-align: center
 		background-color: white	
-		font-family: Arial
+		font-family: Helvetica
 		font-weight: bold
 		font-size: 20pt
 	
@@ -98,8 +131,8 @@ header
 		width: 100%
 		float: left
 		text-align: center
-		font-family: arial
-		font-weight: normal
+		font-family: Helvetica
+		//font-weight: normal
 		font-size: 12pt
 		margin-top: 70px
 		margin-left: auto
@@ -213,9 +246,9 @@ section
 			margin-top: 50px
 			display: block
 			margin-top: 30px
-			font-family: arial
+			font-family: Helvetica
 			font-size: 16pt
-			font-weight: normal
+			//font-weight: normal
 			outline: none
 			text-decoration: none
 			&:hover
@@ -230,8 +263,8 @@ section
 		width: 100%
 		float: left
 		text-align: center
-		font-family: arial
-		font-weight: normal
+		font-family: Helvetica
+		//font-weight: normal
 		font-size: 12pt
 		margin-top: 70px
 		margin-left: auto
@@ -273,6 +306,7 @@ section
 	.blackshadow
 		color: black
 		-webkit-filter: drop-shadow(0px 3px 4px rgba(255, 255, 255, 0.7))
+		filter: drop-shadow(0px 3px 4px rgba(255, 255, 255, 0.7))
 			
 	.ilheader
 		position: relative
@@ -300,7 +334,7 @@ section
 	.whiteglow
 		color: white
 		-webkit-filter: drop-shadow(5px 6px 7px rgba(0, 0, 0, 0.7))
-			
+		filter: drop-shadow(5px 6px 7px rgba(0, 0, 0, 0.7))	
 	
 	.contain
 		position: relative
@@ -324,7 +358,7 @@ section
 		width: 400px
 		height: 600px
 		background-color: blue
-		
+		vertical-align: top
 	h2
 		display: table-cell
 		vertical-align: middle
@@ -359,8 +393,8 @@ section
 		width: 100%
 		//background: rgb(0, 0, 0) 
 		//background: rgba(0, 0, 0, 0.7)
-		font-family: arial black
-		//font-weight: bold
+		font-family: Helvetica Black, Helvetica Black moz, Helvetica
+		//font-weight: black
 		font-size: 18px
 		color: black
 		opacity: 0
@@ -430,6 +464,8 @@ footer
 	max-width: 80%
 	float: left
 	.gallery
+		-webkit-column-count: 3
+		-moz-column-count: 3
 		column-count: 3
 	.galhov
 		&:hover
@@ -447,7 +483,8 @@ footer
 		display: inline-block
 		padding: 10px
 		background-color: #000
-	
+		max-width: 100%
+		box-sizing: border-box
 .artimgsingle
 	vertical-align: top
 	display: tablecell
@@ -468,7 +505,7 @@ footer
 		display: inline-block
 		padding: 10px
 		background-color: #000
-	
+		box-sizing: border-box
 	
 .artimg
 	vertical-align: top
@@ -479,9 +516,12 @@ footer
 	-webkit-column-gap: 0px
 	-moz-column-gap: 0px
 	column-gap: 0px
-	width: 65%
+	max-width: 100%
+	float: left
 	.gallery
 		column-count: 3
+		-webkit-column-count: 3
+		-moz-column-count: 3
 	.galhov
 		&:hover
 			.item
@@ -498,6 +538,8 @@ footer
 		display: inline-block
 		padding: 10px
 		background-color: #000
+		max-width: 100%
+		box-sizing: border-box
 		
 		
 .artskill
@@ -545,3 +587,23 @@ footer
 //nav edits	
 .galnav
 	float: left
+	img
+		max-width: 100px
+		height: auto
+		position: absolute
+	h1
+	
+		font-size: 18pt
+		
+.galnav2
+	float: left
+	margin: 0px
+	img
+		max-width: 100px
+		height: auto
+		position: absolute
+	h1
+		padding-top: 20px
+		margin-left: 100px
+		font-size: 18pt
+		font-weight: normal
