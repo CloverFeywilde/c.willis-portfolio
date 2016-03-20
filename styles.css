@@ -78,6 +78,8 @@ header {
     height: 100%;
     width: 50%;
     background-size: cover; }
+  header .vtext {
+    display: none; }
   header .htext {
     position: relative;
     display: block;
@@ -302,7 +304,6 @@ section {
     margin-left: 10%; }
   section li {
     display: inline-block;
-    float: left;
     width: 200px;
     height: 200px;
     background-color: #9bdb5c;
@@ -389,7 +390,7 @@ footer {
 .artimgsingle {
   vertical-align: top;
   display: tablecell;
-  width: 65%;
+  width: 80%;
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
@@ -402,7 +403,12 @@ footer {
     display: inline-block;
     padding: 10px;
     background-color: #000;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    width: 100%;
+    height: auto; }
+  .artimgsingle img {
+    width: 100%;
+    height: auto; }
 
 .artimg {
   vertical-align: top;
@@ -490,5 +496,132 @@ footer {
     margin-left: 100px;
     font-size: 18pt;
     font-weight: normal; }
+
+@media only screen and (max-width: 1366px) {
+  header .visualdesign {
+    height: auto;
+    width: 27%;
+    margin-left: 11%; }
+  header .freelanceillustration {
+    height: auto;
+    width: 27%;
+    margin-left: 23%; }
+  header h2 {
+    font-size: 30pt; }
+  header .ctext {
+    width: 55%;
+    margin-top: 0px;
+    margin-left: 25%;
+    margin-right: auto;
+    font-size: 10pt; }
+
+  .artskill span {
+    font-size: 16px; }
+  .artskill ul {
+    width: 90%; }
+
+  h2 .notop {
+    margin-top: 0px; } }
+@media only screen and (max-width: 1280px), screen and (min-height: 1000px) {
+  header ul {
+    margin-top: 100px; }
+  header .visualdesign {
+    height: auto;
+    width: 27%;
+    margin-left: 11%; }
+  header .freelanceillustration {
+    height: auto;
+    width: 27%;
+    margin-left: 23%; }
+  header h2 {
+    font-size: 30pt; }
+  header .ctext {
+    width: 55%;
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-right: auto;
+    font-size: 10pt; }
+
+  .artskill span {
+    font-size: 16px; }
+  .artskill ul {
+    width: 90%; }
+
+  h2 .notop {
+    margin-top: 0px; }
+
+  section {
+    margin-top: 200px; } }
+@media only screen and (max-width: 1024px) and (min-height: 600px) {
+  header ul {
+    margin-top: 70px; }
+  header .visualdesign {
+    height: auto;
+    width: 27%;
+    margin-left: 11%; }
+  header .freelanceillustration {
+    height: auto;
+    width: 27%;
+    margin-left: 23%; }
+  header h2 {
+    font-size: 30pt; }
+  header .ctext {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: auto;
+    font-size: 10pt; }
+
+  .artskill span {
+    font-size: 16px; }
+  .artskill ul {
+    width: 90%; }
+
+  h2 .notop {
+    margin-top: 0px; }
+
+  section {
+    margin-top: 200px; } }
+@media handheld, screen and (max-width: 768px) {
+  header ul {
+    margin-top: 0; }
+  header .vtext {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-family: Helvetica Black;
+    font-size: 20pt;
+    line-height: 1;
+    width: 15%; }
+  header .htext {
+    display: none; }
+  header .visualdesign {
+    height: auto;
+    width: 50%;
+    margin-left: 0; }
+  header .freelanceillustration {
+    height: auto;
+    width: 50%;
+    margin-left: 20%; }
+  header .ctext {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: auto;
+    font-size: 10pt; }
+
+  section .lbox {
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin-left: 10%; }
+  section .rbox {
+    display: block;
+    width: 80%;
+    float: left;
+    padding-top: 30px; }
+  section .abouttext {
+    width: 80%;
+    margin-left: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */

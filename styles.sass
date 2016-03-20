@@ -109,7 +109,8 @@ header
 		width: 50%
 		//background-image: url('assets/FIbg.jpg')
 		background-size: cover
-			
+	.vtext
+		display: none
 		
 	.htext
 		position: relative
@@ -376,7 +377,7 @@ section
 		
 	li
 		display: inline-block
-		float: left
+		//float: left
 		width: 200px
 		height: 200px
 		background-color: #9bdb5c
@@ -488,7 +489,7 @@ footer
 .artimgsingle
 	vertical-align: top
 	display: tablecell
-	width: 65%
+	width: 80%
 	-webkit-column-count: 1
 	-moz-column-count: 1
 	column-count: 1
@@ -506,6 +507,11 @@ footer
 		padding: 10px
 		background-color: #000
 		box-sizing: border-box
+		width: 100%
+		height: auto
+	img
+		width: 100%
+		height: auto
 	
 .artimg
 	vertical-align: top
@@ -607,3 +613,159 @@ footer
 		margin-left: 100px
 		font-size: 18pt
 		font-weight: normal
+		
+// Media Queries
+
+			
+// For laptops
+
+@media only screen and (max-width: 1366px)
+	header
+		ul
+			//margin-top: 75px
+		.visualdesign
+			height: auto
+			width: 27%
+			margin-left: 11%
+		.freelanceillustration
+			height: auto
+			width: 27%
+			margin-left: 23%
+		h2
+			font-size: 30pt
+		.ctext
+			width: 55%
+			margin-top: 0px
+			margin-left: 25%
+			margin-right: auto
+			font-size: 10pt
+	.artskill
+		span
+			font-size: 16px
+		ul
+			width: 90%
+	
+	h2
+		.notop
+			margin-top: 0px
+						
+			
+// For Small Desktops
+
+@media only screen and (max-width: 1280px), screen and (min-height: 1000px)
+	header
+		ul
+			margin-top: 100px
+		.visualdesign
+			height: auto
+			width: 27%
+			margin-left: 11%
+		.freelanceillustration
+			height: auto
+			width: 27%
+			margin-left: 23%
+		h2
+			font-size: 30pt
+		.ctext
+			width: 55%
+			margin-top: 100px
+			margin-left: 25%
+			margin-right: auto
+			font-size: 10pt
+	.artskill
+		span
+			font-size: 16px
+		ul
+			width: 90%
+	
+	h2
+		.notop
+			margin-top: 0px
+
+	section
+		margin-top: 200px
+		
+		
+@media only screen and (max-width: 1024px) and (min-height: 600px)
+	header
+		ul
+			margin-top: 70px
+		.visualdesign
+			height: auto
+			width: 27%
+			margin-left: 11%
+		.freelanceillustration
+			height: auto
+			width: 27%
+			margin-left: 23%
+		h2
+			font-size: 30pt
+		.ctext
+			width: 70%
+			margin-top: 20px
+			margin-left: 15%
+			margin-right: auto
+			font-size: 10pt
+	.artskill
+		span
+			font-size: 16px
+		ul
+			width: 90%
+	
+	h2
+		.notop
+			margin-top: 0px
+
+	section
+		margin-top: 200px
+
+		
+// For Tablets	
+			
+@media handheld, screen and (max-width: 768px)
+	header
+		ul
+			margin-top: 0
+		.vtext
+			display: inline-block
+			float: left
+			text-align: center
+			font-family: Helvetica Black
+			font-size: 20pt
+			line-height: 1
+			width: 15%
+		.htext
+			display: none
+		.visualdesign
+			height: auto
+			width: 50%
+			margin-left: 0
+		.freelanceillustration
+			height: auto
+			width: 50%
+			margin-left: 20%
+		.ctext
+			width: 80%
+			margin-top: 20px
+			margin-left: 10%
+			margin-right: auto
+			font-size: 10pt
+	section
+		.lbox
+			display: block
+			width: 80%
+			height: 300px
+			margin-left: 10%
+		.rbox
+			display: block
+			width: 80%
+			float: left
+			padding-top: 30px
+		.abouttext
+			width: 80%
+			margin-left: 10%
+		
+//For SmartPhones	
+		
+		
+	
