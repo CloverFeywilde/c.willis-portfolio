@@ -118,7 +118,8 @@ header {
   display: block;
   float: left;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-top: 70px; }
   header a {
     outline: none;
     text-decoration: none;
@@ -199,7 +200,8 @@ nav {
   display: block;
   float: left;
   padding: 5px;
-  position: relative; }
+  position: fixed;
+  z-index: 2; }
   nav a {
     outline: none;
     text-decoration: none;
@@ -342,7 +344,8 @@ section {
     position: relative;
     display: table-cell;
     padding: 60px;
-    padding-top: 0px; }
+    padding-top: 0px;
+    width: 50%; }
     section .rbox .dropcap {
       color: white; }
   section .lbox {
@@ -648,7 +651,20 @@ footer {
     margin-top: 0px; }
 
   section {
-    margin-top: 200px; } }
+    margin-top: 200px; }
+    section .lbox {
+      display: block;
+      width: 80%;
+      height: 300px;
+      margin-left: 10%; }
+    section .rbox {
+      display: block;
+      width: 80%;
+      float: left;
+      padding-top: 30px; }
+    section .abouttext {
+      width: 80%;
+      margin-left: 10%; } }
 @media handheld, screen and (max-width: 768px) {
   header ul {
     margin-top: 0; }
@@ -732,9 +748,13 @@ footer {
   .ilimg {
     max-width: 100%; }
 
-  nav li {
-    padding: 5px;
-    margin-right: 0; }
+  nav {
+    position: fixed;
+    z-index: 2; }
+    nav li {
+      padding: 5px;
+      font-size: 2em;
+      margin-right: 0.5em; }
 
   .galnav2 img {
     max-width: 60px; }
@@ -749,33 +769,35 @@ footer {
     font-size: 15px;
     padding-top: 0; } }
 @media handheld, screen and (max-width: 490px) {
-  header ul {
-    margin-top: 0; }
-  header .vtext {
-    display: inline-block;
-    float: left;
-    text-align: center;
-    font-family: Helvetica Black;
-    font-size: 12px;
-    line-height: 1;
-    width: 15%; }
-  header .htext {
-    display: none; }
-  header .visualdesign {
-    height: auto;
-    width: 50%;
-    margin-left: 0; }
-  header .freelanceillustration {
-    height: auto;
-    width: 50%;
-    margin-left: 20%; }
-  header .ctext {
-    width: 80%;
-    margin-top: 0px;
-    margin-left: 10%;
-    margin-right: auto;
-    font-size: 12px;
-    font-family: Helvetica Light, Arial; }
+  header {
+    margin-top: 40px; }
+    header ul {
+      margin-top: 0; }
+    header .vtext {
+      display: inline-block;
+      float: left;
+      text-align: center;
+      font-family: Helvetica Black;
+      font-size: 12px;
+      line-height: 1;
+      width: 15%; }
+    header .htext {
+      display: none; }
+    header .visualdesign {
+      height: auto;
+      width: 50%;
+      margin-left: 0; }
+    header .freelanceillustration {
+      height: auto;
+      width: 50%;
+      margin-left: 20%; }
+    header .ctext {
+      width: 80%;
+      margin-top: 0px;
+      margin-left: 10%;
+      margin-right: auto;
+      font-size: 12px;
+      font-family: Helvetica Light, Arial; }
 
   section {
     margin-bottom: 50px; }
@@ -856,8 +878,9 @@ footer {
     nav li {
       padding: 0;
       margin: 0;
-      font-size: 2em;
-      margin-right: 1.3rem; }
+      margin-top: 5px;
+      font-size: 1.7em;
+      margin-right: 0.4rem; }
     nav ul {
       padding: 0;
       margin: 0; }
