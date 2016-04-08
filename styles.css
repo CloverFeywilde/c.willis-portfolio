@@ -370,6 +370,18 @@ section {
     float: left;
     width: 80%;
     margin-left: 10%; }
+  section #filter li {
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    height: auto; }
+    section #filter li a {
+      text-decoration: none;
+      font-family: Helvetica Black;
+      color: black; }
+      section #filter li a:hover {
+        color: #9bdb5c; }
   section li {
     display: inline-block;
     width: 200px;
@@ -722,6 +734,21 @@ footer {
     section .abouttext {
       width: 80%;
       margin-left: 10%; }
+    section ul {
+      width: 100%;
+      margin-left: 0; }
+    section li {
+      background-color: transparent;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: auto;
+      height: auto; }
+      section li a {
+        text-decoration: none;
+        font-family: Helvetica Black;
+        color: black; }
+        section li a:hover {
+          color: #9bdb5c; }
 
   .artifactsection {
     margin-top: 20px; }
@@ -848,6 +875,11 @@ footer {
       section .contactcell h2 {
         margin-top: 0;
         font-size: 16px; }
+    section ul {
+      width: 100%;
+      margin-left: 0; }
+    section #filter li {
+      margin-top: 20px; }
 
   .artifactsection {
     margin-top: 20px; }

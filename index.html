@@ -30,7 +30,7 @@
 			<li class="galnav2"><div class="namemark"><img src="assets/BryanWillis_logo_symbol.png"/></div></li>
 			<li class="galnav2"><h1 class="fullname">Bryan Willis</h1></li>
 			<li class="galnav2"><h1 class="nameinitials">B.W.</h1></li>
-			<li><a class="fa fa-home" href="http://www.bwillis.info/"></a></li>
+			<li><a class="fa fa-home" href="#home"></a></li>
 			<li><a class="fa fa-user" href="#about"></a></li>
 			<li><a class="fa fa-newspaper-o" href="#vdgallery"></a></li>
 			<li><a class="fa fa-paint-brush" href="#figallery"></a></li>
@@ -40,6 +40,7 @@
 	</nav>
 	
 	<header>
+		<a id="home" name="home"/>
 		<ul>
 			<li class="vtext">
 				<a href="#vdgallery">
@@ -97,7 +98,7 @@
 	</header>
 	
 	<section class="blackbg">
-		<a name="about">
+		<a id="about" name="about">
 		<div class="aboutheader">
 		<h2>
 			Meet Bryan Willis.
@@ -122,35 +123,46 @@
 	</section>
 	
 	<section class="vdfix">
-		<a name="vdgallery">
-		<script language="JavaScript">element_to_scroll_to.scrollIntoView();</script>
+		<a id="vdgallery" name="vdgallery">
 		<div class="vdheader">
 			<h2 class="blackshadow">Visual Designer</h2>
 		</div>
 		</a>
-			<ul class="galleryimg">
-				<li>
+		
+		 <ul id="filter">
+			<li><a href="#">All</a></li>
+		|
+			<li><a href="#">Interactive Design</a></li>
+		|
+			<li><a href="#">Graphic Design</a></li>
+		|    
+			<li><a href="#">Communications</a></li>
+		</ul>
+
+
+			<ul id="portfolio" class="galleryimg">
+				<li class="interactive-design communications">
 				<a class="aimg1" href="artifact/gameconcept.html">
 				<img class="img1" src="assets/gameconcept_circle.png" />
 				<span>Interactive<br/>Design Document</span>
 				</a>
 				</li>
 				
-				<li>
+				<li class="communications interactive-design">
 				<a class="aimg2" href="artifact/featuresite.html">
 				<img class="img2" src="assets/featuresite_circle.png" />
 				<span>Feature Website<br/>Nude Models</span>
 				</a>
 				</li>
 				
-				<li>
+				<li class="graphic-design">
 				<a class="aimg3" href="artifact/visualidentity.html">
 				<img class="img3" src="assets/visualidentity_circle.png" />
 				<span>My<br/>Visual Identity</span>
 				</a>
 				</li>
 				
-				<li>
+				<li class="communications graphic-design">
 				<a class="aimg4" href="artifact/2pagespread.html">
 				<img class="img4" src="assets/2pagespread_circle.png" />
 				<span>Print Magazine<br/>2-Page Spread</span>
@@ -160,35 +172,35 @@
 				
 				<!--Second Row -->
 				
-				<li>
+				<li class="graphic-design">
 				<a class="aimg1" href="artifact/specialtyfoods.html">
 				<img class="img1" src="assets/cardredesign_circle.png" />
 				<span>Specialty Foods<br/>Business Card</span>
 				</a>
 				</li>
 				
-				<li>
+				<li class="communications graphic-design">
 				<a class="aimg2" href="artifact/postoffice.html">
 				<img class="img2" src="assets/designproposal_circle.png" />
 				<span>Post Office<br/>Print Proposal</span>
 				</a>
 				</li>
 				
-				<li>
+				<li class="graphic-design">
 				<a class="aimg3" href="artifact/photoadvertisement.html">
 				<img class="img3" src="assets/advertisementphoto_circle.png" />
 				<span>Photo Sale<br/>Advertisement</span>
 				</a>
 				</li>
 				
-				<li>
+				<li class="graphic-design">
 				<a class="aimg4" href="artifact/openhouse.html">
 				<img class="img4" src="assets/postcarddesign_circle.png" />
 				<span>Open House<br/>Post Card</span>
 				</a>
 				</li>
 				
-				<li>
+				<li class="communications graphic-design">
 				<a class="aimg4" href="artifact/creativedocument.html">
 				<img class="img4" src="assets/1pagecreative_circle.png" />
 				<span>Print Document<br/>Sensuality</span>
@@ -199,7 +211,7 @@
 	</section>
 	
 	<section>
-		<a name="figallery">
+		<a id="figallery" name="figallery">
 		<div class="ilheader">
 			<h2 class="blackshadow">Freelance Illustrator</h2>
 		</div>
@@ -267,7 +279,7 @@
 	</section>
 	
 	<section class="blackbg">
-		<a name="contact">
+		<a id="contact" name="contact">
 		<div class="aboutheader">
 			<h2>
 				Need my skills?
@@ -322,13 +334,14 @@
 	
 	<footer>
 		<p>
-			Coded and Designed from scratch with HTML5, CSS3, & SASS
+			Coded and Designed from scratch with HTML5, CSS3, SASS, & JavaScript
 		</p>
 	</footer>
   
   
   </div>
-  
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script async src="scripts.js"></script>
   
 </body>
 </html>
