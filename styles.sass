@@ -424,10 +424,14 @@ section
 	.lbox
 		position: relative
 		display: table-cell
-		width: 400px
-		height: 600px
-		background-color: blue
+		width: 50%
+		//height: 600px
+		//background-color: blue
 		vertical-align: top
+		img
+			width: auto
+			height: 100%
+			margin-left: 0
 	h2
 		display: table-cell
 		vertical-align: middle
@@ -720,7 +724,13 @@ footer
 		.notop
 			margin-top: 0px
 						
-			
+	section
+		.lbox
+			img
+				width: 75%
+				height: auto
+				margin-left: 15%
+				
 // For Small Desktops
 
 @media only screen and (max-width: 1280px), screen and (min-height: 1000px)
@@ -794,6 +804,10 @@ footer
 			width: 80%
 			height: 300px
 			margin-left: 10%
+			img
+				height: 100%
+				width: auto
+				margin-left: 35%
 		.rbox
 			display: block
 			width: 80%
@@ -840,6 +854,9 @@ footer
 			width: 80%
 			height: 300px
 			margin-left: 10%
+			img
+				margin-left: 25%
+				height: 100%
 		.rbox
 			display: block
 			width: 80%
@@ -947,6 +964,10 @@ footer
 			width: 80%
 			height: 300px
 			margin-left: 10%
+			img
+				width: auto
+				height: 100%
+				margin-left: 10%
 		.rbox
 			display: block
 			width: 100%
