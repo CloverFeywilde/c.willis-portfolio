@@ -431,6 +431,12 @@ footer {
 
 .artifactsection {
   margin-top: 100px; }
+  .artifactsection a {
+    border-bottom: 1px #9bdb5c; }
+  .artifactsection h3 {
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px #9bdb5c; }
 
 .acontainer {
   width: 90%;
@@ -555,6 +561,21 @@ footer {
   width: 35%;
   padding-left: 30px;
   position: relative; }
+
+.lightbox {
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3; }
+
+.screen {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
 
 .galnav {
   float: left; }
