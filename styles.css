@@ -224,6 +224,9 @@ nav {
   nav .fa:hover {
     color: #9bdb5c; }
 
+.active {
+  color: #9bdb5c; }
+
 .blackbg {
   color: white;
   background-color: black;
@@ -235,7 +238,6 @@ nav {
 
 section {
   margin-top: 130px;
-  margin-bottom: 130px;
   float: left;
   width: 100%;
   height: auto;
@@ -697,7 +699,7 @@ footer {
     margin-top: 0px; }
 
   section {
-    margin-top: 200px; }
+    margin-top: 100px; }
     section .lbox {
       display: block;
       width: 80%;
@@ -889,6 +891,7 @@ footer {
       font-family: Helvetica Light, Arial; }
 
   section {
+    margin-top: 50px;
     margin-bottom: 50px; }
     section .aboutheader {
       height: 175px; }
@@ -982,7 +985,7 @@ footer {
       margin: 0;
       margin-top: 5px;
       font-size: 1.7em;
-      margin-right: 0.4rem; }
+      margin-right: 0.8rem; }
     nav ul {
       padding: 0;
       margin: 0; }
