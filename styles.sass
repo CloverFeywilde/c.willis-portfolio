@@ -1,19 +1,144 @@
 //Variables
-//$bodyFont: Helvetica, sans-serif
 
-//$h1Font: Helvetica, sans-serif
+=box-shadow 
+	-moz-box-shadow: 0px 3px 25px 0px #666
+	-webkit-box-shadow: 0px 3px 25px 0px #666
+	box-shadow: 0px 3px 25px 0px #666  
 
-//$h2Font: Helvetica, sans-serif
+@font-face
+	font-family: Helvetica
+	src: url(assets/typefaces/Helvetica.otf)
 
-
-
+@font-face
+	font-family: Helvetica Black
+	src: url(assets/typefaces/Helvetica-Black.otf)
+	//font-weight: normal
+	
+@font-face
+	font-family: Helvetica Black moz
+	src: url(assets/typefaces/Helvetica-Black.woff)
+	//font-weight: normal
+	
+@font-face
+	font-family: Helvetica
+	src: url(assets/typefaces/Helvetica-Bold.ttf)
+	font-weight: bold
+	
+@font-face
+	font-family: Helvetica Bold 
+	src: url(assets/typefaces/Helvetica-BoldOblique.ttf)
+	font-style: oblique
+	
+@font-face
+	font-family: Helvetica Light
+	src: url(assets/typefaces/Helvetica-Light.ttf)
+	//font-weight: lighter
+	
+@font-face
+	font-family: Helvetica Light
+	src: url(assets/typefaces/Helvetica-LightOblique.ttf)
+	font-style: oblique
+	
+@font-face
+	font-family: Helvetica Oblique
+	src: url(assets/typefaces/Helvetica-Oblique.ttf)
+	//font-style: oblique
 
 
 //Body Area
 body
 	margin: 0 !important
 	padding: 0 !important
-
+	font-family: Helvetica, sans-serif
+	
+h2
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
+	font-size: 40pt
+	
+h1
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
+	font-size: 40pt
+	
+.dropcap
+	//text-align: center
+	float: left
+	width: 1em
+	font-size: 400%
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
+	line-height: 70%
+	position: inherit
+	opacity: 1 !important
+	color: black
+.pullquote
+	float: right
+	width: 50%
+	font-size: 20px
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
+	//line-height: 70%
+	position: inherit
+	opacity: 1 !important
+	color: white
+	margin-right: 0%
+	&:before
+		display: block
+		padding-left: 10px
+		content: "\201C"
+		font-size: 80px
+		font-family: Helvetica Black, Helvetica Black moz, Helvetica
+		position: absolute
+		left: -30px
+		top: -40px
+		opacity: .5 !important
+		color: white
+.pullquoteblack
+	float: right
+	width: 50%
+	font-size: 20px
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
+	//line-height: 70%
+	position: inherit
+	opacity: 1 !important
+	color: black
+	margin-right: 0%
+	&:before
+		display: block
+		padding-left: 10px
+		content: "\201C"
+		font-size: 80px
+		font-family: Helvetica Black, Helvetica Black moz, Helvetica
+		position: absolute
+		left: -30px
+		top: -40px
+		opacity: .5 !important
+		color: black
+.introquote
+	float: left
+	//width:
+	font-size: 20px
+	font-family: Helvetica Black, Helvetica Black moz, Helvetica
+	//font-weight: black
+	//line-height: 70%
+	position: inherit
+	opacity: 1 !important
+	color: black
+	margin-right: 0%
+	&:before
+		display: block
+		padding-left: 10px
+		content: "\201C"
+		font-size: 80px
+		font-family: Helvetica Black, Helvetica Black moz, Helvetica
+		position: absolute
+		left: -30px
+		top: -40px
+		opacity: .5 !important
+		color: black
+	
 wrapper 
 	width: 100%
 	
@@ -21,19 +146,66 @@ header
 	display: block
 	float: left
 	width: 100%
-	height: 450px
+	height: 100%
+	margin-top: 70px
+	a 
+		outline: none
+		text-decoration: none
+		color: black
+		&:hover
+			color: #9bdb5c
 	
-	.uiux
+	.whitefix
+		background-color: white
+		opacity: .25
+		width: 100%
+		height: 100%
+		position: absolute
+	
+	.visualdesign
 		position: relative
 		height: 100%
 		width: 50%
-		background-color: blue
+		//background-image: url('assets/VDbg.jpg')
+		background-size: cover
+		
 			
-	.illustration
+	.freelanceillustration
 		position: relative
 		height: 100%
 		width: 50%
-		background-color: yellow
+		//background-image: url('assets/FIbg.jpg')
+		background-size: cover
+	.vtext
+		display: none
+		
+	.htext
+		position: relative
+		display: block
+		float: left
+		width: 50%
+		text-align: center
+		background-color: white	
+		font-family: Helvetica
+		font-weight: bold
+		font-size: 20pt
+	
+	
+		
+		
+	.ctext
+		position: relative
+		display: inline-block
+		width: 100%
+		float: left
+		text-align: center
+		font-family: Helvetica
+		//font-weight: normal
+		font-size: 12pt
+		margin-top: 70px
+		margin-left: auto
+		margin-right: auto
+		
 		
 	span
 		position: absolute
@@ -58,8 +230,15 @@ header
 		float: left
 		padding: 0
 		
-	
-	h2
+	img
+		display: block
+		position: relative
+		max-width: 100%
+		max-height: 100%
+		margin: 0 auto 
+		margin-left: auto
+		margin-right: auto
+		margin-top: 20px
 		
 			
 
@@ -70,8 +249,8 @@ nav
 	display: block
 	float: left
 	padding: 5px
-	position: relative
-	
+	position: fixed
+	z-index: 2
 	a 
 		outline: none
 		text-decoration: none
@@ -88,7 +267,7 @@ nav
 		box-sizing: border-box
 		text-align: right
 		vertical-align: middle
-		
+		//float: right
 		
 	
 	li
@@ -98,28 +277,886 @@ nav
 		margin: 10px
 		font-size: 3em
 		margin-right: 1.5rem
-		
+	
+	.fa
+		&:hover
+			color: #9bdb5c
+.active
+	color: #9bdb5c	
+.blackbg
+	color: white
+	background-color: black	
+	padding-bottom: 130px
+	margin-bottom: 0px
+.vdfix
+	margin-top: 0px
 
 section
-	display: block
+
+	margin-top: 130px
+	//margin-bottom: 130px
 	float: left
 	width: 100%
-	height: 1000px 
-	background-color: green
+	height: auto 
+	background-color: white
 
+	.contactcell
+		display: table-cell
+		position: relative
+		width: 20%
+		text-align: center
+		a
+			outline: none
+			text-decoration: none
+			color: black
+			&:hover
+			color: #9bdb5c
+		h2
+			margin-top: 50px
+			display: block
+			margin-top: 30px
+			font-family: Helvetica
+			font-size: 16pt
+			//font-weight: normal
+			outline: none
+			text-decoration: none
+			&:hover
+				color: #9bdb5c
+		img
+			max-width: 40%
+			height: auto
+			
+	.abouttext
+		position: relative
+		display: block
+		width: 100%
+		float: left
+		text-align: center
+		font-family: Helvetica
+		//font-weight: normal
+		font-size: 12pt
+		margin-top: 70px
+		margin-left: auto
+		margin-right: auto
+	
+	.aboutheader
+		position: relative
+		display: table
+		width: 100%
+		text-align: center
+		height: 250px
+		line-height: normal	
+	
+	
+	.vdheader
+		position: relative
+		display: table
+		width: 100%
+		text-align: center
+		height: 250px
+		line-height: normal
+		&:before
+			content: ""
+			position: absolute
+			display: table
+			background-image: url(assets/VDbg_1.jpg)
+			background-size: cover
+			background-attachment: fixed
+			-webkit-filter: blur(2px) /* Chrome, Safari, Opera */
+			filter: blur(2px)
+			width: 100%
+			text-align: center
+			height: 250px
+			line-height: normal
+			overflow: hidden
+			opacity: .8 
+			
+		
+	.blackshadow
+		color: black
+		-webkit-filter: drop-shadow(0px 3px 4px rgba(255, 255, 255, 0.7))
+		filter: drop-shadow(0px 3px 4px rgba(255, 255, 255, 0.7))
+			
+	.ilheader
+		position: relative
+		display: table
+		width: 100%
+		text-align: center
+		height: 250px
+		line-height: normal	
+		&:before
+			content: ""
+			position: absolute
+			display: table
+			background-image: url(assets/FIbg_2.jpg)
+			background-size: cover
+			background-attachment: fixed
+			-webkit-filter: blur(2px) /* Chrome, Safari, Opera */
+			filter: blur(2px)
+			width: 100%
+			text-align: center
+			height: 250px
+			line-height: normal
+			overflow: hidden
+			opacity: .8 
+			
+	.whiteglow
+		color: white
+		-webkit-filter: drop-shadow(5px 6px 7px rgba(0, 0, 0, 0.7))
+		filter: drop-shadow(5px 6px 7px rgba(0, 0, 0, 0.7))	
+	
+	.contain
+		position: relative
+		display: table
+		float: left
+		width: 80%
+		margin-left: 10% 
+		table-layout: fixed
+		
+	.rbox
+		position: relative
+		display: table-cell
+		padding: 60px
+		padding-top: 0px
+		width: 50%
+		.dropcap
+			color: white
+		
+	.lbox
+		position: relative
+		display: table-cell
+		width: 50%
+		//height: 600px
+		//background-color: blue
+		vertical-align: top
+		img
+			width: auto
+			height: 100%
+			margin-left: 0
 	h2
+		display: table-cell
+		vertical-align: middle
+		margin-top: auto
+		margin-bottom: auto
 	
 	ul
-	
+		list-style-type: none
+		margin: 0
+		padding: 0
+		text-align: center
+		float: left
+		width: 80%
+		margin-left: 10%
+	#filter
+		li
+			background-color: transparent
+			margin-left: 10px
+			margin-right: 10px
+			width: auto
+			height: auto
+			a
+				text-decoration: none
+				font-family: Helvetica Black
+				color: black
+				&:hover
+					color: #9bdb5c
 	li
+		display: inline-block
+		//float: left
+		width: 200px
+		height: 200px
+		background-color: #9bdb5c
+		//+box-shadow
+		margin-left: 50px
+		margin-top: 50px
+		position: relative
+		border-radius: 50%
+			
+	
+	span
+		position: absolute
+		top: 40%
+		left: 0
+		width: 100%
+		//background: rgb(0, 0, 0) 
+		//background: rgba(0, 0, 0, 0.7)
+		font-family: Helvetica Black, Helvetica Black moz, Helvetica
+		//font-weight: black
+		font-size: 18px
+		color: black
+		opacity: 0
+	.aimg1	
+		&:hover
+			.img1
+				opacity: .5
+			span
+				opacity: 1
+				
+	.aimg2	
+		&:hover
+			.img2
+				opacity: .5
+			span
+				opacity: 1
+				
+	.aimg3	
+		&:hover
+			.img3
+				opacity: .5
+			span
+				opacity: 1
+				
+	.aimg4	
+		&:hover
+			.img4
+				opacity: .5
+			span
+				opacity: 1
+
+			
+
 
 footer
 	width: 100%
 	height: 50px
 	display: block
 	float: left
-	background-color: grey
+	background-color: white
+	text-align: center
 	
 
+// This is the Artifact pages exclusive CSS code
+.artifactheader
+	text-align: center
+	padding-top: 40px
+	
+.artifactsection
+	margin-top: 100px
+	a
+		//text-decoration: none
+		border-bottom: 1px #9bdb5c
+	h3
+		color: black
+		font-weight: bold
+		//text-decoration: none
+		border-bottom: 1px #9bdb5c
 
+.acontainer
+	width: 90%
+	display: table
+	table-layout: fixed
+	margin: 0 auto
+	
+.ilimg	
+	vertical-align: top
+	display: table-cell
+	-webkit-column-count: 2
+	-moz-column-count: 2
+	column-count: 2
+	-webkit-column-gap: 0px
+	-moz-column-gap: 0px
+	column-gap: 0px
+	max-width: 80%
+	float: left
+	.gallery
+		-webkit-column-count: 3
+		-moz-column-count: 3
+		column-count: 3
+	.galhov
+		&:hover
+			.item
+				background-color: #9bdb5c
+				img
+					opacity: .5
+				
+	img
+		//position: absolute
+		max-width: 100%
+		height: auto
+		
+	.item
+		display: inline-block
+		padding: 10px
+		background-color: #000
+		max-width: 100%
+		box-sizing: border-box
+.artimgsingle
+	vertical-align: top
+	display: tablecell
+	width: 80%
+	-webkit-column-count: 1
+	-moz-column-count: 1
+	column-count: 1
+	float: left
+	.galhov
+		&:hover
+			.item
+				background-color: #9bdb5c
+				img
+					opacity: .5
+	
+	
+	.item
+		display: inline-block
+		padding: 10px
+		background-color: #000
+		box-sizing: border-box
+		width: 100%
+		height: auto
+	img
+		width: 100%
+		height: auto
+	
+.artimg
+	vertical-align: top
+	display: table-cell
+	-webkit-column-count: 2
+	-moz-column-count: 2
+	column-count: 2
+	-webkit-column-gap: 0px
+	-moz-column-gap: 0px
+	column-gap: 0px
+	max-width: 100%
+	float: left
+	.gallery
+		column-count: 3
+		-webkit-column-count: 3
+		-moz-column-count: 3
+	.galhov
+		&:hover
+			.item
+				background-color: #9bdb5c
+				img
+					opacity: .5
+				
+	img
+		//position: absolute
+		max-width: 100%
+		height: auto
+		
+	.item
+		display: inline-block
+		padding: 10px
+		background-color: #000
+		max-width: 100%
+		box-sizing: border-box
+		
+		
+.artskill
+	margin-top: 50px
+	ul
+		display: table
+		text-align: left
+		margin-left: 0%
+		width: 50%
+		position:relative
+		li
+			display: inline-block
+			float: left
+			width: auto
+			height: auto
+			background-color: transparent
+			margin-left: 0%
+			margin-top: 20px
+			
+	span
+		display: inline-block
+		vertical-align: middle
+		color: black
+		position: static
+		opacity: 1
+		padding-left: 20px
+		width: auto
+		
+		
+	img
+		width: 20%
+		height: auto
+		vertical-align: middle
+		
+			
+	h2
+		font-size: 20pt
 
+.arttext
+	vertical-align: top
+	display: table-cell
+	width: 35%
+	padding-left: 30px
+	position: relative
+
+.lightbox
+	height: auto
+	position: fixed
+	top: 50%
+	left: 50%
+	z-index: 3
+
+.screen
+	display: none
+	position: fixed
+	background-color: rgba(0, 0, 0, 0.9)
+	width: 100%
+	height: 100%
+	z-index: 2
+
+//nav edits	
+.galnav
+	float: left
+	img
+		max-width: 100px
+		height: auto
+		position: absolute
+	h1
+	
+		font-size: 18pt
+		
+.galnav2
+	float: left
+	margin: 0px
+	padding-top: 0%
+	img
+		max-width: 70px
+		height: auto
+		position: inherit
+	h1
+		padding-top: 5px
+		margin-left: 5px
+		font-size: 25px
+		font-weight: normal
+	.nameinitials
+		display: none
+
+		
+// Media Queries
+
+//imac and large displays
+
+@media only screen and (min-width: 2300px)
+	header
+		ul
+			margin-top: 200px		
+	section
+		margin-top: 400px
+			
+// For laptops
+
+@media only screen and (max-width: 1366px)
+	header
+		ul
+			//margin-top: 75px
+		.visualdesign
+			height: auto
+			width: 27%
+			margin-left: 11%
+		.freelanceillustration
+			height: auto
+			width: 27%
+			margin-left: 23%
+		h2
+			font-size: 30pt
+		.ctext
+			width: 55%
+			margin-top: 0px
+			margin-left: 25%
+			margin-right: auto
+			font-size: 10pt
+	.artskill
+		span
+			font-size: 16px
+		ul
+			width: 90%
+	
+	h2
+		.notop
+			margin-top: 0px
+						
+	section
+		.lbox
+			img
+				width: 75%
+				height: auto
+				margin-left: 15%
+				
+// For Small Desktops
+
+@media only screen and (max-width: 1280px), screen and (min-height: 1000px)
+	header
+		ul
+			margin-top: 100px
+		.visualdesign
+			height: auto
+			width: 27%
+			margin-left: 11%
+		.freelanceillustration
+			height: auto
+			width: 27%
+			margin-left: 23%
+		h2
+			font-size: 30pt
+		.ctext
+			width: 55%
+			margin-top: 100px
+			margin-left: 25%
+			margin-right: auto
+			font-size: 10pt
+	.artskill
+		span
+			font-size: 16px
+		ul
+			width: 90%
+	
+	h2
+		.notop
+			margin-top: 0px
+
+	section
+		margin-top: 200px
+		
+		
+@media only screen and (max-width: 1024px) and (min-height: 600px)
+	header
+		ul
+			margin-top: 70px
+		.visualdesign
+			height: auto
+			width: 27%
+			margin-left: 11%
+		.freelanceillustration
+			height: auto
+			width: 27%
+			margin-left: 23%
+		h2
+			font-size: 30pt
+		.ctext
+			width: 70%
+			margin-top: 20px
+			margin-left: 15%
+			margin-right: auto
+			font-size: 10pt
+	.artskill
+		span
+			font-size: 16px
+		ul
+			width: 90%
+	
+	h2
+		.notop
+			margin-top: 0px
+
+	section
+		margin-top: 100px
+		.lbox
+			display: block
+			width: 80%
+			height: 300px
+			margin-left: 10%
+			img
+				height: 100%
+				width: auto
+				margin-left: 35%
+		.rbox
+			display: block
+			width: 80%
+			float: left
+			padding-top: 30px
+		.abouttext
+			width: 80%
+			margin-left: 10%
+		
+// For Tablets	
+			
+@media handheld, screen and (max-width: 900px)
+	header
+		ul
+			margin-top: 75px
+			margin-bottom: 25px 
+		.vtext
+			display: inline-block
+			float: left
+			text-align: center
+			font-family: Helvetica Black
+			font-size: 20pt
+			line-height: 1
+			width: 15%
+		.htext
+			display: none
+		.visualdesign
+			height: auto
+			width: 50%
+			margin-left: 0
+		.freelanceillustration
+			height: auto
+			width: 50%
+			margin-left: 20%
+		.ctext
+			width: 80%
+			margin-top: 20px
+			margin-left: 10%
+			margin-right: auto
+			font-size: 10pt
+	section
+		margin-bottom: 50px
+		.lbox
+			display: block
+			width: 80%
+			height: 300px
+			margin-left: 10%
+			img
+				margin-left: 25%
+				height: 100%
+		.rbox
+			display: block
+			width: 80%
+			float: left
+			padding-top: 30px
+		.abouttext
+			width: 80%
+			margin-left: 10%
+		ul
+			width: 100%
+			margin-left: 0
+		#filter
+		li
+			background-color: transparent
+			margin-left: 5px
+			margin-right: 5px
+			width: auto
+			height: auto
+			a
+				text-decoration: none
+				font-family: Helvetica Black
+				color: black
+				&:hover
+					color: #9bdb5c
+		.contactcell
+			display: inline-block
+			width: 33.3%
+			margin-bottom: 20px
+			font-size: 20px
+			
+					
+	.artifactsection
+		margin-top: 20px
+		h3
+			float: left
+			width: 100%
+	.artskill
+		display: inline-block
+		width: 25%
+		float: none
+		margin-left: 5%
+		margin-top: 20px
+		
+		span
+			font-size: 13px
+			font-family: Helvetica, arial
+		ul
+			width: 100%
+			li
+				width: 100%
+	.arttext
+		width: 100%
+		display: block
+		float: left
+		margin-top: 20px
+		padding-left: 0px
+		p
+			float: left
+			display: block
+			width: 70%
+			font-size: 16pt
+		.pullquoteblack
+			float: left
+	.artifactheader
+		width: 80%
+		margin-left: 10%
+	.artimgsingle
+		width: 100%
+	.ilimg
+		max-width: 100%
+	nav
+		position: fixed
+		z-index: 2
+		li
+			padding: 5px
+			font-size: 2em
+			margin-right: .5em
+	.galnav2
+		
+		img
+			max-width: 60px
+		h1
+		.fullname
+			display: inline-block
+			margin-left: 0px
+			font-size: 20px
+			padding-top: 5px
+		.nameinitials
+			display: none
+			margin-left: 3px
+			font-size: 15px
+			padding-top: 0
+	
+
+@media handheld, screen and (max-width: 590px)
+	nav
+		position: fixed
+		z-index: 2
+		li
+			padding: 3px
+			font-size: 1.9em
+			margin-right: 0	
+	section
+		.contactcell
+			h2
+				font-size: 19px
+//For SmartPhones	
+		
+@media handheld, screen and (max-width: 490px)
+	header
+		margin-top: 40px
+		ul
+			margin-top: 0
+		.vtext
+			display: inline-block
+			float: left
+			text-align: center
+			font-family: Helvetica Black
+			font-size: 12px
+			line-height: 1
+			width: 15%
+		.htext
+			display: none
+		.visualdesign
+			height: auto
+			width: 50%
+			margin-left: 0
+		.freelanceillustration
+			height: auto
+			width: 50%
+			margin-left: 20%
+		.ctext
+			width: 80%
+			margin-top: 0px
+			margin-left: 10%
+			margin-right: auto
+			font-size: 12px
+			font-family: Helvetica Light, Arial
+	section
+		margin-top: 50px
+		.aboutheader
+			height: 175px
+		margin-bottom: 50px
+		.lbox
+			display: block
+			width: 80%
+			height: 300px
+			margin-left: 10%
+			img
+				width: auto
+				height: 100%
+				margin-left: 10%
+		.rbox
+			display: block
+			width: 100%
+			float: left
+			padding: 0px
+			padding-top: 30px
+			font-size: 14px
+		.abouttext
+			width: 80%
+			margin-left: 10%
+			margin-top: 0%
+			h3
+				font-size: 18px
+				margin-top: 0px
+		
+		.contactcell
+			display: inline-block
+			width: 50%
+			margin-right: 0%
+			margin-bottom: 30px
+			h2
+				margin-top: 0
+				font-size: 16px
+		ul
+			width: 100%
+			margin-left: 0
+			li
+				width: 45%
+				img
+					max-width: 90%
+		#filter
+			li
+				margin-top: 20px
+	.artifactsection
+		margin-top: 20px
+	.artskill
+		display: block
+		width: 100%
+		float: left
+		margin-left: 5%
+		margin-top: 20px
+		
+		span
+			font-size: 13px
+			font-family: Helvetica, arial
+		ul
+			width: 100%
+			li
+				width: 100%
+	.arttext
+		width: 100%
+		display: block
+		float: left
+		margin-top: 20px
+		padding-left: 0px
+		p
+			float: left
+			display: block
+			width: 100%
+			font-size: 16px
+			
+	.artifactheader
+		width: 80%
+		margin-left: 10%
+		h1
+			font-size: 30px
+	.artimgsingle
+		width: 100%
+	.ilimg
+		max-width: 100%	
+	nav
+		height: 40px
+		padding: 0px
+		li
+			padding: 0
+			margin: 0
+			margin-top: 5px
+			font-size: 1.7em
+			margin-right: .8rem
+		ul
+			padding: 0
+			margin: 0
+	h2
+		font-size: 40px
+		
+	.blackbg
+		margin-top: 75px
+		padding-bottom: 70px
+	.galnav2
+		
+		img
+			max-width: 40px
+		h1
+		.fullname
+			display: none
+		.nameinitials
+			display: inline-block
+			margin-left: 3px
+			font-size: 15px
+			padding-top: 0
+
+	
+	
