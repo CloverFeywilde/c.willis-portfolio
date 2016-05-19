@@ -244,7 +244,8 @@ nav {
   margin-top: 0px; }
 
 .fifix {
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  margin-top: 200px; }
 
 .aboutfix {
   margin-top: 0px; }
@@ -682,7 +683,7 @@ footer {
     margin-top: 0px; }
 
   section {
-    margin-top: 200px; } }
+    margin-top: 50px; } }
 @media only screen and (max-width: 1024px) and (min-height: 600px) {
   header ul {
     margin-top: 70px; }
@@ -712,7 +713,7 @@ footer {
     margin-top: 0px; }
 
   section {
-    margin-top: 100px; }
+    margin-top: 200px; }
     section .lbox {
       display: block;
       width: 80%;
@@ -731,35 +732,42 @@ footer {
       width: 80%;
       margin-left: 10%; } }
 @media handheld, screen and (max-width: 900px) {
-  header ul {
-    margin-top: 75px;
-    margin-bottom: 25px; }
-  header .vtext {
-    display: inline-block;
-    float: left;
-    text-align: center;
-    font-family: Helvetica Black;
-    font-size: 20pt;
-    line-height: 1;
-    width: 15%; }
-  header .htext {
-    display: none; }
-  header .visualdesign {
-    height: auto;
-    width: 50%;
-    margin-left: 0; }
-  header .freelanceillustration {
-    height: auto;
-    width: 50%;
-    margin-left: 20%; }
-  header .ctext {
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-right: auto;
-    font-size: 10pt; }
+  .fifix {
+    margin-top: 0px; }
+
+  header {
+    margin-top: 0px;
+    margin-bottom: 150px; }
+    header ul {
+      margin-top: 75px;
+      margin-bottom: 25px; }
+    header .vtext {
+      display: inline-block;
+      float: left;
+      text-align: center;
+      font-family: Helvetica Black;
+      font-size: 20pt;
+      line-height: 1;
+      width: 15%; }
+    header .htext {
+      display: none; }
+    header .visualdesign {
+      height: auto;
+      width: 50%;
+      margin-left: 0; }
+    header .freelanceillustration {
+      height: auto;
+      width: 50%;
+      margin-left: 20%; }
+    header .ctext {
+      width: 80%;
+      margin-top: 20px;
+      margin-left: 10%;
+      margin-right: auto;
+      font-size: 10pt; }
 
   section {
+    margin-top: 0px;
     margin-bottom: 50px; }
     section .lbox {
       display: block;
@@ -797,6 +805,8 @@ footer {
       width: 33.3%;
       margin-bottom: 20px;
       font-size: 20px; }
+    section .ilheader {
+      margin-top: 200px; }
 
   .artifactsection {
     margin-top: 20px; }
@@ -848,7 +858,8 @@ footer {
     nav li {
       padding: 5px;
       font-size: 2em;
-      margin-right: 0.5em; }
+      margin-right: 0.5em;
+      margin-top: 10px; }
 
   .galnav2 img {
     max-width: 60px; }
@@ -874,8 +885,13 @@ footer {
   section .contactcell h2 {
     font-size: 19px; } }
 @media handheld, screen and (max-width: 490px) {
+  .fifix {
+    margin-bottom: 125px;
+    margin-top: 50px; }
+
   header {
-    margin-top: 40px; }
+    margin-top: 70px;
+    margin-bottom: 130px; }
     header ul {
       margin-top: 0; }
     header .vtext {
@@ -949,6 +965,8 @@ footer {
           max-width: 90%; }
     section #filter li {
       margin-top: 20px; }
+    section .ilheader {
+      margin-top: 75px; }
 
   .artifactsection {
     margin-top: 20px; }
