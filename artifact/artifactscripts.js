@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	//include your img ID's below on line 3.
   $('#one, #two, #three, #four, #five, #six, #seven').click(function() {
+	$('#one, #two, #three, #four, #five, #six, #seven').css('margin-top', '');
+    $('#one, #two, #three, #four, #five, #six, #seven').css('margin-left', '');
+    $('#one, #two, #three, #four, #five, #six, #seven').css('width', '');
+    $('#one, #two, #three, #four, #five, #six, #seven').css('height', '');
 	$('section.artifactsection div.acontainer div.artimgsingle a div.item img').css('width', 'auto');
     $(this).addClass('lightbox')
     
@@ -51,5 +55,8 @@ $(document).ready(function(){
     $('#one, #two, #three, #four, #five, #six, #seven').css('width', '');
     $('#one, #two, #three, #four, #five, #six, #seven').css('height', '');
   })
+  
+  //square thumbnail script
+  $('.item').nailthumb({width:200, height:200});
 
 	})
