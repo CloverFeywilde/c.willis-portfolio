@@ -143,9 +143,12 @@ header {
 }
 header .galBoxA {
   margin: 5%;
+  margin-top: 80px;
   float: left;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 header a {
   outline: none;
@@ -305,8 +308,6 @@ section .contactcell a {
   outline: none;
   text-decoration: none;
   color: black;
-}
-section .contactcell a:hover {
   color: #9bdb5c;
 }
 section .contactcell h2 {
