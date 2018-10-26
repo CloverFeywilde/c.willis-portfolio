@@ -163,11 +163,13 @@ header
             color: #9bdb5c
     
         .square
-                display: block
-                margin: auto
-                background-color: black
-                height: 200px
-                width: 200px
+            display: block
+            margin: auto
+            background-color: black
+            height: 200px
+            width: 200px
+    .whiteSquare
+        display: none
     .whitefix
         background-color: white
         opacity: .25
@@ -881,6 +883,10 @@ footer
             
 @media handheld, screen and (max-width: 900px)
     header
+        .whiteSquare
+            display: block
+            width: 200px
+            height: 200px
         ul
             margin-top: 75px
             margin-bottom: 25px 
@@ -1029,6 +1035,9 @@ footer
 @media handheld, screen and (max-width: 490px)
     header
         margin-top: 40px
+        height: 100%
+        .galBoxA
+            height: 100%
         ul
             margin-top: 0
         .vtext
