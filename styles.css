@@ -134,21 +134,17 @@ wrapper {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   float: left;
   width: 100%;
-  height: 100%;
-  margin-top: 70px;
+  height: 100vh;
 }
 header .galBoxA {
-  margin: 5%;
-  margin-top: 80px;
-  float: left;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 header a {
   outline: none;
@@ -159,6 +155,8 @@ header a:hover {
   color: #9bdb5c;
 }
 header a .square {
+  display: block;
+  margin: auto;
   background-color: black;
   height: 200px;
   width: 200px;
