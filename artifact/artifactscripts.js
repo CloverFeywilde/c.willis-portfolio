@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//include your img ID's below on line 3.
-  $('#one, #two, #three, #four, #five, #six, #seven').click(function() {
+  $('#one, #two, #three, #four, #five, #six, #seven, #eight').click(function() {
 	$('section.artifactsection div.acontainer div.artimgsingle a div.item img').css('width', 'auto');
     $(this).addClass('lightbox')
     
@@ -45,11 +45,11 @@ $(document).ready(function(){
   //make click off function here and reset all CSS data 
   $('.screen').click(function() {
     $('.screen').css('display', 'none');
-    $('#one, #two, #three, #four, #five, #six, #seven').removeClass('lightbox');
-    $('#one, #two, #three, #four, #five, #six, #seven').css('margin-top', '');
-    $('#one, #two, #three, #four, #five, #six, #seven').css('margin-left', '');
-    $('#one, #two, #three, #four, #five, #six, #seven').css('width', '');
-    $('#one, #two, #three, #four, #five, #six, #seven').css('height', '');
+    $('#one, #two, #three, #four, #five, #six, #seven, #eight').removeClass('lightbox');
+    $('#one, #two, #three, #four, #five, #six, #seven, #eight').css('margin-top', '');
+    $('#one, #two, #three, #four, #five, #six, #seven, #eight').css('margin-left', '');
+    $('#one, #two, #three, #four, #five, #six, #seven, #eight').css('width', '');
+    $('#one, #two, #three, #four, #five, #six, #seven, #eight').css('height', '');
   })
 
 	})
