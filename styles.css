@@ -613,6 +613,12 @@ footer {
   width: 100%;
   height: auto;
 }
+.artimgsingle .delugeButton {
+  display: none;
+}
+.artimgsingle .delugeButtonSmall {
+  display: none;
+}
 
 .artimg {
   vertical-align: top;
@@ -1224,6 +1230,12 @@ footer {
 
   .artimgsingle {
     width: 100%;
+  }
+  .artimgsingle .delugeFull {
+    display: none;
+  }
+  .artimgsingle .delugeButton {
+    display: block;
   }
 
   .ilimg {
