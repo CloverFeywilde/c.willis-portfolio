@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('nav a[href^="#"], header a').on('click', function(e) { 
+	$('nav a[href^="#"]').on('click', function(e) { 
 	//Smooth Scroll Script
 		e.preventDefault();
 		var target = this.hash;

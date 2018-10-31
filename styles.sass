@@ -147,6 +147,29 @@ header
     float: left
     width: 100%
     height: 100vh
+    span
+        position: absolute
+        top: 40%
+        left: 0
+        width: 100%
+        text-align: center
+        //background: rgb(0, 0, 0) 
+        //background: rgba(0, 0, 0, 0.7)
+        font-family: Helvetica Black, Helvetica Black moz, Helvetica
+        //font-weight: black
+        font-size: 18px
+        color: black
+        opacity: 0
+    .aimg1  
+        &:hover
+            .square
+                background-color: #9bdb5c
+                opacity: .85
+            .img1
+                opacity: .5
+            span
+                opacity: 1
+
     .galBoxA
         //margin: 5%
         //margin-top: 80px
@@ -163,11 +186,14 @@ header
             color: #9bdb5c
     
         .square
-            display: block
+            display: flex
             margin: auto
             background-color: black
             height: 200px
             width: 200px
+            position: relative
+            img
+                margin: auto
     .whiteSquare
         display: none
     .whitefix
@@ -224,8 +250,8 @@ header
         
     span
         position: absolute
-        top: 75%
-        margin-left: 25%
+        //top: 75%
+        //margin-left: 25%
             
     ul
         width: 100%
@@ -308,7 +334,7 @@ nav
 
 section
 
-    margin-top: 130px
+    padding-top: 50px
     //margin-bottom: 130px
     float: left
     width: 100%
@@ -1047,6 +1073,10 @@ footer
         height: 100%
         .galBoxA
             height: 100%
+            .whiteSquare
+                display: none
+            .square
+                margin-top: 50px
         ul
             margin-top: 0
         .vtext
@@ -1178,7 +1208,7 @@ footer
         font-size: 40px
         
     .blackbg
-        margin-top: 75px
+        padding-top: 75px
         padding-bottom: 70px
     .galnav2
         

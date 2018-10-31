@@ -139,6 +139,27 @@ header {
   width: 100%;
   height: 100vh;
 }
+header span {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Helvetica Black, Helvetica Black moz, Helvetica;
+  font-size: 18px;
+  color: black;
+  opacity: 0;
+}
+header .aimg1:hover .square {
+  background-color: #9bdb5c;
+  opacity: 0.85;
+}
+header .aimg1:hover .img1 {
+  opacity: 0.5;
+}
+header .aimg1:hover span {
+  opacity: 1;
+}
 header .galBoxA {
   height: 100vh;
   display: flex;
@@ -155,11 +176,15 @@ header a:hover {
   color: #9bdb5c;
 }
 header a .square {
-  display: block;
+  display: flex;
   margin: auto;
   background-color: black;
   height: 200px;
   width: 200px;
+  position: relative;
+}
+header a .square img {
+  margin: auto;
 }
 header .whiteSquare {
   display: none;
@@ -211,8 +236,6 @@ header .ctext {
 }
 header span {
   position: absolute;
-  top: 75%;
-  margin-left: 25%;
 }
 header ul {
   width: 100%;
@@ -293,7 +316,7 @@ nav .fa:hover {
 }
 
 section {
-  margin-top: 130px;
+  padding-top: 50px;
   float: left;
   width: 100%;
   height: auto;
@@ -1091,6 +1114,12 @@ footer {
   header .galBoxA {
     height: 100%;
   }
+  header .galBoxA .whiteSquare {
+    display: none;
+  }
+  header .galBoxA .square {
+    margin-top: 50px;
+  }
   header ul {
     margin-top: 0;
   }
@@ -1263,7 +1292,7 @@ footer {
   }
 
   .blackbg {
-    margin-top: 75px;
+    padding-top: 75px;
     padding-bottom: 70px;
   }
 
