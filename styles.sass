@@ -287,7 +287,7 @@ nav
     background-color: #eeeeee
     height: 70px
     width: 100%
-    display: block
+    display: flex
     float: left
     padding: 5px
     position: fixed
@@ -699,7 +699,7 @@ footer
         text-align: left
         margin-left: 0%
         width: 50%
-        position:relative
+        position: relative
         li
             display: inline-block
             float: left
@@ -760,9 +760,26 @@ footer
     h1
     
         font-size: 18pt
-        
+.leftnav
+    display: flex
+    justify-content: left
+    width: 50%
+    align-items: end
+    .titlemedium
+        display: none
+    .titlesmall
+        display: none
+    .title
+        h1
+            font-size: 18px
+.artnav
+    align-items: baseline
+.rightnav
+    display: flex
+    justify-content: right
+    width: 50%
 .galnav2
-    float: left
+    //float: left
     margin: 0px
     padding-top: 0%
     img
@@ -774,9 +791,19 @@ footer
         margin-left: 5px
         font-size: 25px
         font-weight: normal
+        margin: 0px
+        padding: 0px
+    .title
+        h1
+            font-size: 18px
+    .titlemedium
+        display: none
+        h1
+            display: none
     .nameinitials
         display: none
-
+.navstamp
+    align-self: baseline
         
 // Media Queries
 
@@ -1036,8 +1063,17 @@ footer
             padding: 5px
             font-size: 2em
             margin-right: .5em
-    .galnav2
-        
+        .leftnav
+            align-items: center
+            width: 70%
+            .title
+                display: none
+            .titlesmall
+                display: none
+            .titlemedium
+                display: block
+                h1
+                    font-size: 16px
         img
             max-width: 60px
         h1
@@ -1051,7 +1087,11 @@ footer
             margin-left: 3px
             font-size: 15px
             padding-top: 0
-    
+        .title
+            font-size: 18px
+            padding-top: 5px
+            margin-left: 0px
+            display: inline-block
 
 @media handheld, screen and (max-width: 590px)
     nav
@@ -1193,6 +1233,16 @@ footer
     .ilimg
         max-width: 100% 
     nav
+        .leftnav
+            width: 70%
+            .titlemedium
+                display: none
+            .titlesmall
+                display: block
+                h1
+                    font-size: 12px
+                    text-align: center
+                    margin-left: 10px
         height: 40px
         padding: 0px
         li

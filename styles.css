@@ -268,7 +268,7 @@ nav {
   background-color: #eeeeee;
   height: 70px;
   width: 100%;
-  display: block;
+  display: flex;
   float: left;
   padding: 5px;
   position: fixed;
@@ -686,6 +686,7 @@ footer {
   text-align: left;
   margin-left: 0%;
   width: 50%;
+  position: relative;
 }
 .artskill ul li {
   display: inline-block;
@@ -751,8 +752,33 @@ footer {
   font-size: 18pt;
 }
 
+.leftnav {
+  display: flex;
+  justify-content: left;
+  width: 50%;
+  align-items: end;
+}
+.leftnav .titlemedium {
+  display: none;
+}
+.leftnav .titlesmall {
+  display: none;
+}
+.leftnav .title h1 {
+  font-size: 18px;
+}
+
+.artnav {
+  align-items: baseline;
+}
+
+.rightnav {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+}
+
 .galnav2 {
-  float: left;
   margin: 0px;
   padding-top: 0%;
 }
@@ -766,9 +792,24 @@ footer {
   margin-left: 5px;
   font-size: 25px;
   font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+.galnav2 .title h1 {
+  font-size: 18px;
+}
+.galnav2 .titlemedium {
+  display: none;
+}
+.galnav2 .titlemedium h1 {
+  display: none;
 }
 .galnav2 .nameinitials {
   display: none;
+}
+
+.navstamp {
+  align-self: baseline;
 }
 
 @media only screen and (min-width: 2300px) {
@@ -1074,21 +1115,42 @@ footer {
     font-size: 2em;
     margin-right: 0.5em;
   }
-
-  .galnav2 img {
+  nav .leftnav {
+    align-items: center;
+    width: 70%;
+  }
+  nav .leftnav .title {
+    display: none;
+  }
+  nav .leftnav .titlesmall {
+    display: none;
+  }
+  nav .leftnav .titlemedium {
+    display: block;
+  }
+  nav .leftnav .titlemedium h1 {
+    font-size: 16px;
+  }
+  nav img {
     max-width: 60px;
   }
-  .galnav2 .fullname {
+  nav .fullname {
     display: inline-block;
     margin-left: 0px;
     font-size: 20px;
     padding-top: 5px;
   }
-  .galnav2 .nameinitials {
+  nav .nameinitials {
     display: none;
     margin-left: 3px;
     font-size: 15px;
     padding-top: 0;
+  }
+  nav .title {
+    font-size: 18px;
+    padding-top: 5px;
+    margin-left: 0px;
+    display: inline-block;
   }
 }
 @media handheld, screen and (max-width: 590px) {
@@ -1274,6 +1336,20 @@ footer {
   nav {
     height: 40px;
     padding: 0px;
+  }
+  nav .leftnav {
+    width: 70%;
+  }
+  nav .leftnav .titlemedium {
+    display: none;
+  }
+  nav .leftnav .titlesmall {
+    display: block;
+  }
+  nav .leftnav .titlesmall h1 {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10px;
   }
   nav li {
     padding: 0;
