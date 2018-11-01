@@ -778,16 +778,19 @@ footer {
   width: 50%;
 }
 
-.galnav2 {
+.galnav2,
+.frontnav {
   margin: 0px;
   padding-top: 0%;
 }
-.galnav2 img {
+.galnav2 img,
+.frontnav img {
   max-width: 70px;
   height: auto;
   position: inherit;
 }
-.galnav2 h1 {
+.galnav2 h1,
+.frontnav h1 {
   padding-top: 5px;
   margin-left: 5px;
   font-size: 25px;
@@ -795,16 +798,20 @@ footer {
   margin: 0px;
   padding: 0px;
 }
-.galnav2 .title h1 {
+.galnav2 .title h1,
+.frontnav .title h1 {
   font-size: 18px;
 }
-.galnav2 .titlemedium {
+.galnav2 .titlemedium,
+.frontnav .titlemedium {
   display: none;
 }
-.galnav2 .titlemedium h1 {
+.galnav2 .titlemedium h1,
+.frontnav .titlemedium h1 {
   display: none;
 }
-.galnav2 .nameinitials {
+.galnav2 .nameinitials,
+.frontnav .nameinitials {
   display: none;
 }
 
@@ -1372,13 +1379,20 @@ footer {
     padding-bottom: 70px;
   }
 
-  .galnav2 img {
+  .galnav {
+    margin-left: 10px;
+  }
+
+  .galnav2 img,
+.frontnav img {
     max-width: 40px;
   }
-  .galnav2 .fullname {
+  .galnav2 .fullname,
+.frontnav .fullname {
     display: none;
   }
-  .galnav2 .nameinitials {
+  .galnav2 .nameinitials,
+.frontnav .nameinitials {
     display: inline-block;
     margin-left: 3px;
     font-size: 15px;
