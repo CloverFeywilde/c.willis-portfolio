@@ -134,8 +134,8 @@ wrapper {
 }
 
 header {
-  display: block;
-  float: left;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100vh;
 }
@@ -162,6 +162,7 @@ header .aimg1:hover span {
 }
 header .galBoxA {
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -969,6 +970,10 @@ footer {
   }
 }
 @media handheld, screen and (max-width: 900px) {
+  header .galBoxA {
+    margin-top: 40px;
+    width: 99%;
+  }
   header .whiteSquare {
     display: block;
     width: 200px;
@@ -1160,6 +1165,12 @@ footer {
     display: inline-block;
   }
 }
+@media handheld, screen and (max-width: 768px) {
+  header .galBoxA {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
 @media handheld, screen and (max-width: 590px) {
   nav {
     position: fixed;
@@ -1177,11 +1188,12 @@ footer {
 }
 @media handheld, screen and (max-width: 490px) {
   header {
-    margin-top: 40px;
     height: 100%;
   }
   header .galBoxA {
     height: 100%;
+    margin-top: 40px;
+    width: 85%;
   }
   header .galBoxA .whiteSquare {
     display: none;
