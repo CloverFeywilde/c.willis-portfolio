@@ -138,6 +138,7 @@ header {
   justify-content: center;
   width: 100%;
   height: 100vh;
+  margin-bottom: 50px;
 }
 header span {
   position: absolute;
@@ -830,10 +831,6 @@ footer {
   header ul {
     margin-top: 200px;
   }
-
-  section {
-    margin-top: 400px;
-  }
 }
 @media only screen and (max-width: 1366px) {
   header .visualdesign {
@@ -915,6 +912,9 @@ footer {
   }
 }
 @media only screen and (max-width: 1024px) and (min-height: 600px) {
+  header {
+    margin-bottom: 50px;
+  }
   header ul {
     margin-top: 70px;
   }
@@ -951,7 +951,7 @@ footer {
   }
 
   section {
-    margin-top: 100px;
+    margin-top: 0px;
   }
   section .lbox {
     display: block;
@@ -1020,7 +1020,7 @@ footer {
   }
 
   section {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   section .lbox {
     display: block;
@@ -1242,7 +1242,7 @@ footer {
   }
 
   section {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
   }
   section .aboutheader {
