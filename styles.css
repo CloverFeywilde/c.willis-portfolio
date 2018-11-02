@@ -757,7 +757,8 @@ footer {
   display: flex;
   justify-content: left;
   width: 50%;
-  align-items: end;
+  align-items: flex-end;
+  -moz-align-items: end;
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
 }
@@ -777,9 +778,9 @@ footer {
 
 .rightnav {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
+  -moz-justify-content: right;
   -webkit-justify-content: flex-end;
-  -ms-justify-content: flex-end;
   width: 50%;
 }
 
