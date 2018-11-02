@@ -186,6 +186,7 @@ header a .square {
 }
 header a .square img {
   margin: auto;
+  align-self: flex-start;
 }
 header .whiteSquare {
   display: none;
