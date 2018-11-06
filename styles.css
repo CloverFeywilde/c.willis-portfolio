@@ -454,6 +454,10 @@ section .rbox {
   padding-top: 0px;
   width: 50%;
 }
+section .rbox a {
+  text-decoration: none;
+  color: #9bdb5c;
+}
 section .rbox .dropcap {
   color: white;
 }
